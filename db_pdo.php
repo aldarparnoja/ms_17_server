@@ -4,7 +4,7 @@ require ('conf.php');
 go_home();
 
 try {
-    $conn = new PDO("mysql:host=$server;dbname=test", $user, $passw);
+    $conn = new PDO("mysql:host=$server;dbname=ms17", $user, $passw);
     $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "<p>PDO ühedus on olemas</p>";
 }
