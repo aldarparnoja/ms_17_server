@@ -1,0 +1,12 @@
+mysql -u root
+> show databases
+CREATE DATABASE ms17;
+ USE ms17;
+CREATE TABLE nimekiri (id INT(3) PRIMARY KEY AUTO_INCREMENT, Eesnimi VARCHAR(30) NOT NULL, Perenimi VARCHAR(30) NOT NULL, id_code CHAR(11), time TIMESTAMP);
+ SELECT * FROM nimekiri;
+DESCRIBE nimekiri
+INSERT INTO nimekiri (id, Eesnimi, Perenimi, id_code) VALUES(10, 'Aldar', 'Pärnoja', '54878965124');
+SHOW WARNINGS
+SELECT * FROM nimekiri;
+UPDATE nimekiri SET id_code='12345678912' WHERE id=11;
+DELETE FROM nimekiri WHERE id=11;
