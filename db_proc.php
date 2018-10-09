@@ -3,7 +3,7 @@
 require ('conf.php');
 go_home();
 
-// ühenduse tegemine protseduuriga
+// ühenduse tegemine protseduuriga.
 
 $conn = mysqli_connect($server, $user, $passw);
 
